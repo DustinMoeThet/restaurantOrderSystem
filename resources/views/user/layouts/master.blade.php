@@ -62,7 +62,7 @@
                                 <a class="dropdown-item" href="#">Best Rating</a>
                             </ul>
                         </div> --}}
-                        <div class="btn-group ml-auto">
+                        <div class="btn-group me-5">
                             <button class="btn btn-secondary dropdown-toggle rounded" type="button"
                                 data-toggle="dropdown" aria-expanded="false">
                                 <i class="fa-regular fa-user"></i> {{ Auth::user()->name }}
@@ -84,13 +84,6 @@
                                     </a>
                                 </li>
                             </ul>
-                        </div>
-                        <div class="navbar-nav ml-auto py-0 d-none d-lg-block">
-                            <a href="" class="btn px-0">
-                                <i class="fas fa-heart text-primary"></i>
-                                <span class="badge text-secondary border border-secondary rounded-circle"
-                                    style="padding-bottom: 2px;">0</span>
-                            </a>
                         </div>
                     </div>
                 </nav>

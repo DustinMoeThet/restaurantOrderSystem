@@ -3,7 +3,7 @@
     <!-- Cart Start -->
     <div class="container-fluid" style="height: 400px">
         <div class="row px-xl-5">
-            <div class="col-lg-8 table-responsive mb-5">
+            <div class=" table-responsive mb-5">
                 <table class="table table-light table-borderless table-hover text-center mb-0">
                     <thead class="thead-dark">
                         <tr>
@@ -28,7 +28,13 @@
                                 <td class="align-middle">
                                     @if ($item->status == 0)
                                         {{ 'Pending' }}
+                                    @elseif($item->status == 1)
+                                        {{ 'Accepted' }}
+                                    @else
+                                        {{ 'Rejected' }}
                                     @endif
+
+
                                 </td>
                             </tr>
                         @endforeach
@@ -41,33 +47,6 @@
                     There is no product in cart <i class="fa-regular fa-face-frown"></i>
                 </div>
             @endif --}}
-            <div class="col-lg-4">
-                <h5 class="section-title position-relative text-uppercase mb-3"><span class="bg-secondary pr-3">Cart
-                        Summary</span></h5>
-                <div class="bg-light p-30 mb-5">
-                    <div class="border-bottom pb-2">
-                        <div class="d-flex justify-content-between mb-3">
-                            <h6>Subtotal</h6>
-                            <div>
-                                {{-- <h6 class=" d-inline" id="allTotal" all>{{ $totalPrice }}</h6> --}}
-                                <h6 class="d-inline"></h6>
-                            </div>
-                        </div>
-                        <div class="d-flex justify-content-between">
-                            <h6 class="font-weight-medium">Delivery</h6>
-                            <h6 class="font-weight-medium">3000 Kyat</h6>
-                        </div>
-                    </div>
-                    <div class="pt-2">
-                        <div class="d-flex justify-content-between mt-2">
-                            <h5>Total</h5>
-                            {{-- <h5 id="finalTotal">{{ $totalPrice + 3000 }}</h5> --}}
-                        </div>
-                        <button id="orderBtn" class="btn btn-block btn-primary font-weight-bold my-3 py-3">Proceed To
-                            Checkout</button>
-                    </div>
-                </div>
-            </div>
         </div>
     </div>
     <!-- Cart End -->

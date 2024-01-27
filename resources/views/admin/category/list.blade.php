@@ -71,8 +71,6 @@
                                     <td>{{$item->created_at->format('j-F-Y')}}</td>
                                     <td>
                                         <div class="table-data-feature">
-                                            <button class="item" data-toggle="tooltip" data-placement="top" title="View">
-                                                <i class="fa-sharp fa-regular fa-eye"></i>                                            </button>
                                             <a href="{{route('category#edit',$item->id)}}">
                                                 <button class="item" data-toggle="tooltip" data-placement="top" title="Edit">
                                                     <i class="zmdi zmdi-edit"></i>

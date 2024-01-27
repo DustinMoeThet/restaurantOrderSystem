@@ -12,8 +12,7 @@
                 <div class="bg-light p-4 mb-30">
                     <form>
                         <div class=" d-flex align-items-center justify-content-between mb-3">
-                            <input type="checkbox" class="-input" checked id="price-all">
-                            <label class="mt-2" for="price-all">Categories</label>
+                            <label class="mt-2 text-center" for="price-all">Categories</label>
                             <span class="badge border font-weight-normal text-dark">{{ $category->count() }}</span>
                         </div>
                         <hr>
