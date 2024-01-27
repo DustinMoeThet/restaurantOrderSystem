@@ -27,9 +27,6 @@
                     </form>
                 </div>
                 <!-- Price End -->
-                <div class="">
-                    <button class="btn btn btn-warning w-100">Order</button>
-                </div>
             </div>
             <!-- Shop Sidebar End -->
 
